@@ -28,6 +28,7 @@ class Main extends React.Component {
         return (
             <Container>
                 <Header />
+                <Header />
             </Container>
         );
     }

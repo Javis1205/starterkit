@@ -5,5 +5,7 @@ target 'starterkit' do
   
   pod 'Firebase/Messaging'
 
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
+
 end
 

@@ -53,6 +53,8 @@
 		C6BCE3414A574D6FA4AB90EE /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9795B54B5D46493CA23C1AB6 /* Octicons.ttf */; };
 		E91B5A415F6A41C59FF671A4 /* libRNFIRMessaging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C868037898DC48A8BBB3A413 /* libRNFIRMessaging.a */; };
 		EF76475E209C4C83004050E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF764735209C4C82004050E4 /* GoogleService-Info.plist */; };
+		EF764768209C5388004050E4 /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF764765209C536D004050E4 /* libCodePush.a */; };
+		EF76476A209C53A6004050E4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EF764769209C53A6004050E4 /* libz.tbd */; };
 		F1ED324862F3466CA4E1B98A /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD9D55F9C0C14B71AEA1B860 /* SimpleLineIcons.ttf */; };
 /* End PBXBuildFile section */
 
@@ -344,6 +346,20 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNFIRMessaging;
 		};
+		EF764764209C536D004050E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF76475F209C536D004050E4 /* CodePush.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = CodePush;
+		};
+		EF764766209C536D004050E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF76475F209C536D004050E4 /* CodePush.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F886647B1F4ADB500036D01B;
+			remoteInfo = "CodePush-tvOS";
+		};
 		EFA68E0E209AF46000B6A013 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B84B2F44FC0441C4A60F3644 /* ReactNativeNavigation.xcodeproj */;
@@ -401,6 +417,8 @@
 		E3AD7D72D737907291314B41 /* Pods-starterkit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-starterkit.release.xcconfig"; path = "Pods/Target Support Files/Pods-starterkit/Pods-starterkit.release.xcconfig"; sourceTree = "<group>"; };
 		EBAACE8D02D143C2A8128417 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		EF764735209C4C82004050E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF76475F209C536D004050E4 /* CodePush.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; };
+		EF764769209C53A6004050E4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -416,6 +434,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF76476A209C53A6004050E4 /* libz.tbd in Frameworks */,
+				EF764768209C5388004050E4 /* libCodePush.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -591,6 +611,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF764769209C53A6004050E4 /* libz.tbd */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
 				AA16FE9C8447A11E0ECCF7E9 /* libPods-starterkit.a */,
 			);
@@ -618,6 +639,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				EF76475F209C536D004050E4 /* CodePush.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -713,6 +735,15 @@
 			isa = PBXGroup;
 			children = (
 				EF764716209C4422004050E4 /* libRNFIRMessaging.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF764760209C536D004050E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF764765209C536D004050E4 /* libCodePush.a */,
+				EF764767209C536D004050E4 /* libCodePush.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -852,6 +883,10 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = EF764760209C536D004050E4 /* Products */;
+					ProjectRef = EF76475F209C536D004050E4 /* CodePush.xcodeproj */;
+				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
@@ -1195,6 +1230,20 @@
 			fileType = archive.ar;
 			path = libRNFIRMessaging.a;
 			remoteRef = EF764715209C4422004050E4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EF764765209C536D004050E4 /* libCodePush.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCodePush.a;
+			remoteRef = EF764764209C536D004050E4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EF764767209C536D004050E4 /* libCodePush.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCodePush.a;
+			remoteRef = EF764766209C536D004050E4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		EFA68E0F209AF46000B6A013 /* libReactNativeNavigation.a */ = {
