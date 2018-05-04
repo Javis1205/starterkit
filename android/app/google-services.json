@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "455858426791",
+    "firebase_url": "https://t-infinity-174013.firebaseio.com",
+    "project_id": "t-infinity-174013",
+    "storage_bucket": "t-infinity-174013.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455858426791:android:40698f357e343631",
+        "android_client_info": {
+          "package_name": "com.starterkit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455858426791-03fv2m4177dt4ldjgm4jn5ide9sgd997.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9E52jj_5w7LqMAoeBnSC9MqByXQLUJ9g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
