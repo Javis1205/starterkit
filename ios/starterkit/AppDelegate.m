@@ -14,6 +14,7 @@
 #import "RCCManager.h"
 #import "RNFIRMessaging.h"
 #import <React/RCTRootView.h>
+@import GoogleMaps;
 
 @implementation AppDelegate
 
@@ -30,7 +31,7 @@
 #else
   jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 #endif
-  
+  [GMSServices provideAPIKey:@"AIzaSyCXOyBvovLYKndyazlt0d1O8ScNDnsnFgc"];
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   self.window.backgroundColor = [UIColor whiteColor];
   [[RCCManager sharedInstance] initBridgeWithBundleURL:jsCodeLocation launchOptions:launchOptions];
